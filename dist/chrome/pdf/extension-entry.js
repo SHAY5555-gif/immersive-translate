@@ -20,18 +20,23 @@ function main() {
     filePath = filePath.slice(fileIndex);
   }
 
-  fetch(filePath).then((response) => {
-    return response.blob();
-  })
+  fetch(filePath)
+    .then((response) => {
+      return response.blob();
+    })
     .then((blob) => {
       waitIframeLoad().then(function () {
-        iframe.contentWindow.postMessage({
-          type: "pdf-local-file",
-          blob: blob,
-          fileName: getDecodedFileName(filePath),
-        }, "*");
+        iframe.contentWindow.postMessage(
+          {
+            type: "pdf-local-file",
+            blob: blob,
+            fileName: getDecodedFileName(filePath),
+          },
+          "*",
+        );
       });
-    }).catch(function (err) {
+    })
+    .catch(function (err) {
       console.error(err);
       restorePdf(filePath);
       hiddenLoading();

@@ -31,8 +31,8 @@
 [imt-state="dual"] .immersive-translate-pdf-target-container {
   position: absolute;
   background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
   top: 0;
   width: 600px;
   height: 100%;
@@ -240,8 +240,8 @@
 
 [imt-state="dual"] .immersive-translate-target-translation-theme-marker2-inner {
   font-weight: bold;
-  text-shadow: 10px 0px 3px
-      var(--immersive-translate-theme-marker2-backgroundColor),
+  text-shadow:
+    10px 0px 3px var(--immersive-translate-theme-marker2-backgroundColor),
     16px 3px 9px var(--immersive-translate-theme-marker2-backgroundColor),
     2px 0px 6px var(--immersive-translate-theme-marker2-backgroundColor),
     -12px 0px 12px var(--immersive-translate-theme-marker2-backgroundColor) !important;

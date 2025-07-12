@@ -20,7 +20,7 @@
   left: 0;
   right: 0;
   height: 80%;
-  background-color: #F3F5F6;
+  background-color: #f3f5f6;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
@@ -113,7 +113,7 @@
 }
 
 .reward-center-close-icon:hover {
-  background-color: #F6F8F9;
+  background-color: #f6f8f9;
 }
 
 .reward-center-description {
@@ -125,7 +125,7 @@
 .reward-center-card {
   padding: 16px;
   border-radius: 12px;
-  background: #FFF;
+  background: #fff;
   margin-bottom: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
@@ -141,7 +141,7 @@
   font-weight: 700;
   line-height: 1.5;
   padding-bottom: 12px;
-  border-bottom: 1px solid #ECF0F7;
+  border-bottom: 1px solid #ecf0f7;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -196,13 +196,13 @@
   width: 80px;
   height: 6px;
   border-radius: 4px;
-  background-color: #F3F5F6;
+  background-color: #f3f5f6;
   overflow: hidden;
 }
 
 .reward-progress-fill {
   height: 100%;
-  background-color: #EA4C89;
+  background-color: #ea4c89;
   border-radius: 4px;
   transition: width 0.3s ease;
 }
@@ -246,23 +246,23 @@
 }
 
 .reward-amount {
-  background: linear-gradient(90deg, #FF9500 0%, #FF4545 100%);
+  background: linear-gradient(90deg, #ff9500 0%, #ff4545 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
-  margin:0 4px;
+  margin: 0 4px;
 }
 
 .reward-amount-advanced {
-  background: linear-gradient(90deg, #00A6FF 0%, #C369FF 50%, #FF4590 100%);
+  background: linear-gradient(90deg, #00a6ff 0%, #c369ff 50%, #ff4590 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
-  margin:0 4px;
+  margin: 0 4px;
 }
 
 .reward-additional {
@@ -272,7 +272,7 @@
 /* 任务按钮样式 */
 .reward-task-button {
   background: #333;
-  color: #FFF;
+  color: #fff;
   border: none;
   border-radius: 20px;
   padding: 4px 16px;
@@ -291,22 +291,22 @@
 }
 
 .reward-task-button.disabled {
-  background: #CCC;
+  background: #ccc;
   cursor: not-allowed;
 }
 
 .reward-task-button.disabled:hover {
-  background: #CCC;
+  background: #ccc;
 }
 
 /* 领取按钮特殊样式 */
 .reward-task-item .reward-task-button.claim {
-  background: #EA4C89;
+  background: #ea4c89;
 }
 
 /* 已完成按钮样式 */
 .reward-task-item .reward-task-button.completed {
-  background: #E8E8E8;
+  background: #e8e8e8;
   color: #999;
   cursor: default;
 }
@@ -316,7 +316,7 @@
   color: #ccc;
   font-size: 12px;
   padding: 8px 0;
-  border-top: 1px solid #ECF0F7;
+  border-top: 1px solid #ecf0f7;
   position: relative;
   gap: 4px;
   display: flex;
@@ -360,26 +360,41 @@
 }
 
 @keyframes ShadowRolling {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 rgba(255, 255, 255, 0);
   }
   12% {
     box-shadow: 100px 0 var(--loading-color);
   }
   25% {
-    box-shadow: 110px 0 var(--loading-color), 100px 0 var(--loading-color);
+    box-shadow:
+      110px 0 var(--loading-color),
+      100px 0 var(--loading-color);
   }
   36% {
-    box-shadow: 120px 0 var(--loading-color), 110px 0 var(--loading-color), 100px 0 var(--loading-color);
+    box-shadow:
+      120px 0 var(--loading-color),
+      110px 0 var(--loading-color),
+      100px 0 var(--loading-color);
   }
   50% {
-    box-shadow: 130px 0 var(--loading-color), 120px 0 var(--loading-color), 110px 0 var(--loading-color), 100px 0 var(--loading-color);
+    box-shadow:
+      130px 0 var(--loading-color),
+      120px 0 var(--loading-color),
+      110px 0 var(--loading-color),
+      100px 0 var(--loading-color);
   }
   62% {
-    box-shadow: 130px 0 var(--loading-color), 120px 0 var(--loading-color), 110px 0 var(--loading-color);
+    box-shadow:
+      130px 0 var(--loading-color),
+      120px 0 var(--loading-color),
+      110px 0 var(--loading-color);
   }
   75% {
-    box-shadow: 130px 0 var(--loading-color), 120px 0 var(--loading-color);
+    box-shadow:
+      130px 0 var(--loading-color),
+      120px 0 var(--loading-color);
   }
   87% {
     box-shadow: 130px 0 var(--loading-color);
@@ -393,7 +408,7 @@
   flex-direction: column;
   padding: 16px;
   word-break: break-all;
-  color: #EA4C89;
+  color: #ea4c89;
 }
 
 .reward-center-footer {
@@ -417,7 +432,7 @@
 }
 
 .reward-task-loading::before {
-  content: '';
+  content: "";
   width: 8px;
   height: 8px;
   border: 2px solid rgba(255, 255, 255, 0.3);
